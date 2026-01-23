@@ -4,30 +4,30 @@ import 'package:flutter/material.dart';
 class AppColors {
   AppColors._();
 
-  // Primary colors
-  static const primary = Color(0xFF6366F1); // Indigo
-  static const primaryLight = Color(0xFF818CF8);
-  static const primaryDark = Color(0xFF4F46E5);
+  // Primary colors (Green - Freshness & Life)
+  static const primary = Color(0xFF10B981); // Emerald 500
+  static const primaryLight = Color(0xFF34D399); // Emerald 400
+  static const primaryDark = Color(0xFF047857); // Emerald 700
 
-  // Background colors (Dark mode)
-  static const background = Color(0xFF0F172A); // Slate 900
-  static const surface = Color(0xFF1E293B); // Slate 800
-  static const surfaceLight = Color(0xFF334155); // Slate 700
+  // Background colors (Light mode - Natural & Ivory)
+  static const background = Color(0xFFFAFAF9); // Stone 50 (Ivory White)
+  static const surface = Color(0xFFFFFFFF); // Pure White
+  static const surfaceLight = Color(0xFFF5F5F4); // Stone 100
 
-  // Text colors
-  static const textPrimary = Color(0xFFF8FAFC); // Slate 50
-  static const textSecondary = Color(0xFF94A3B8); // Slate 400
-  static const textMuted = Color(0xFF64748B); // Slate 500
+  // Text colors (Dark for light background)
+  static const textPrimary = Color(0xFF1C1917); // Stone 900
+  static const textSecondary = Color(0xFF57534E); // Stone 600
+  static const textMuted = Color(0xFF78716C); // Stone 500
 
   // Accent colors
-  static const accent = Color(0xFF22D3EE); // Cyan 400
+  static const accent = Color(0xFF84CC16); // Lime 500
   static const success = Color(0xFF10B981); // Emerald 500
   static const warning = Color(0xFFF59E0B); // Amber 500
   static const danger = Color(0xFFEF4444); // Red 500
 
-  // Gradient
-  static const gradientStart = Color(0xFF6366F1);
-  static const gradientEnd = Color(0xFF8B5CF6);
+  // Gradient (Fresh Green)
+  static const gradientStart = Color(0xFF10B981); // Emerald 500
+  static const gradientEnd = Color(0xFF059669); // Emerald 600
 }
 
 /// 📝 App Strings

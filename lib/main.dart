@@ -16,11 +16,7 @@ void main() async {
         'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNwanZzcXFwa3lleGVwamNwamJzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjkwMzEwODMsImV4cCI6MjA4NDYwNzA4M30.MvabNaPtPz23qRZI1ZhEL7oQzCCEWLvxlT33f8mkJ0E',
   );
 
-  runApp(
-    const ProviderScope(
-      child: BolehMakanApp(),
-    ),
-  );
+  runApp(const ProviderScope(child: BolehMakanApp()));
 }
 
 /// 🍽️ Main App Widget
@@ -39,15 +35,16 @@ class BolehMakanApp extends StatelessWidget {
       // 🎨 Theme
       theme: ThemeData(
         useMaterial3: true,
+        scaffoldBackgroundColor: AppColors.background,
         colorScheme: ColorScheme.fromSeed(
           seedColor: AppColors.primary,
-          brightness: Brightness.dark,
+          brightness: Brightness.light,
           surface: AppColors.surface,
+          secondary: AppColors.accent,
         ),
-        scaffoldBackgroundColor: AppColors.background,
         textTheme: GoogleFonts.interTextTheme(
-          ThemeData.dark().textTheme,
-        ),
+          ThemeData.light().textTheme,
+        ).apply(bodyColor: AppColors.textPrimary, displayColor: AppColors.textPrimary),
       ),
     );
   }
